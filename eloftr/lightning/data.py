@@ -19,13 +19,13 @@ from torch.utils.data import (
     dataloader
 )
 
-from src.utils.augment import build_augmentor
-from src.utils.dataloader import get_local_split
-from src.utils.misc import tqdm_joblib
-from src.utils import comm
-from src.datasets.megadepth import MegaDepthDataset
-from src.datasets.scannet import ScanNetDataset
-from src.datasets.sampler import RandomConcatSampler
+from eloftr.utils.augment import build_augmentor
+from eloftr.utils.dataloader import get_local_split
+from eloftr.utils.misc import tqdm_joblib
+from eloftr.utils import comm
+from eloftr.datasets.megadepth import MegaDepthDataset
+from eloftr.datasets.scannet import ScanNetDataset
+from eloftr.datasets.sampler import RandomConcatSampler
 
 
 class MultiSceneDataModule(pl.LightningDataModule):

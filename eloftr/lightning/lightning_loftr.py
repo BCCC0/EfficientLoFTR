@@ -9,19 +9,19 @@ import numpy as np
 import pytorch_lightning as pl
 from matplotlib import pyplot as plt
 
-from src.loftr import LoFTR
-# from src.loftr.utils.supervision import compute_supervision_coarse, compute_supervision_fine
-# from src.losses.loftr_loss import LoFTRLoss
-from src.optimizers import build_optimizer, build_scheduler
-from src.utils.metrics import (
+from eloftr.loftr import LoFTR
+# from eloftr.loftr.utils.supervision import compute_supervision_coarse, compute_supervision_fine
+# from eloftr.losses.loftr_loss import LoFTRLoss
+from eloftr.optimizers import build_optimizer, build_scheduler
+from eloftr.utils.metrics import (
     compute_symmetrical_epipolar_errors,
     compute_pose_errors,
     aggregate_metrics
 )
-from src.utils.plotting import make_matching_figures
-from src.utils.comm import gather, all_gather
-from src.utils.misc import lower_config, flattenList
-from src.utils.profiler import PassThroughProfiler
+from eloftr.utils.plotting import make_matching_figures
+from eloftr.utils.comm import gather, all_gather
+from eloftr.utils.misc import lower_config, flattenList
+from eloftr.utils.profiler import PassThroughProfiler
 
 from torch.profiler import profile
 

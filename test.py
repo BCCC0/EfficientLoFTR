@@ -3,11 +3,11 @@ import argparse
 import pprint
 from loguru import logger as loguru_logger
 
-from src.config.default import get_cfg_defaults
-from src.utils.profiler import build_profiler
+from eloftr.config.default import get_cfg_defaults
+from eloftr.utils.profiler import build_profiler
 
-from src.lightning.data import MultiSceneDataModule
-from src.lightning.lightning_loftr import PL_LoFTR
+from eloftr.lightning.data import MultiSceneDataModule
+from eloftr.lightning.lightning_loftr import PL_LoFTR
 
 import torch
 

@@ -1,4 +1,4 @@
-from src.config.default import _CN as cfg
+from eloftr.config.default import _CN as cfg
 
 # training config
 cfg.TRAINER.CANONICAL_LR = 8e-3
